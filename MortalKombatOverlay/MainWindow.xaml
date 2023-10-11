@@ -1,0 +1,147 @@
+﻿<Window x:Class="MortalKombatOverlay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MortalKombatOverlay"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
+
+    <Window.DataContext>
+        <local:GameWatcherViewModel />
+    </Window.DataContext>
+    <Window.Style>
+        <Style TargetType="Window">
+            <Setter Property="Topmost" Value="False" />
+            <Setter Property="Background" Value="White" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMortalKombatRunning}" Value="True">
+                    <Setter Property="Topmost" Value="True" />
+                    <Setter Property="Background" Value="Transparent" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Style>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Player Names -->
+        <TextBlock Text="{Binding Player1, FallbackValue='Player1'}"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="10" />
+        <TextBlock Text="{Binding Player2, FallbackValue='Player2'}"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="10" />
+
+
+        <!-- Move Lists for Player 1 -->
+        <ScrollViewer HorizontalAlignment="Left"
+                      VerticalAlignment="Center"
+                      Margin="10"
+                      Grid.Row="1"
+                      Focusable="False"
+                      Height="200"
+                      VerticalScrollBarVisibility="Auto"
+                      PreviewMouseDown="Button_PreviewMouseDown">
+
+            <ScrollViewer.Style>
+                <Style TargetType="ScrollViewer">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ScrollViewer">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <ScrollBar Name="PART_VerticalScrollBar"
+                                               Width="18"
+                                               IsTabStop="False"
+                                               Value="{TemplateBinding VerticalOffset}"
+                                               Maximum="{TemplateBinding ScrollableHeight}"
+                                               ViewportSize="{TemplateBinding ViewportHeight}"
+                                               Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
+                                               Orientation="Vertical"
+                                               Grid.Column="0" />
+                                    <ScrollContentPresenter Grid.Column="1" />
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ScrollViewer.Style>
+
+            <ListBox Focusable="False" ItemsSource="{Binding Player1Moves}" PreviewMouseDown="Button_PreviewMouseDown">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={StaticResource MoveListToStringConverter}}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
+
+        <!-- Launch Mortal Kombat Button -->
+        <Button Grid.Row="1" Content="Launch Mortal Kombat"
+                Command="{Binding LaunchMortalKombatCommand}"
+                Visibility="{Binding IsMortalKombatRunning, Converter={StaticResource BooleanToVisibilityConverter}}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Height="26" />
+
+        <!-- Move Lists for Player 2 -->
+        <ScrollViewer HorizontalAlignment="Right"
+                      VerticalAlignment="Center"
+                      Margin="10"
+                      Grid.Row="1"
+                      Height="200"
+                      Focusable="False" PreviewMouseDown="Button_PreviewMouseDown"
+                      VerticalScrollBarVisibility="Auto">
+            <!-- Assuming each line is 20 units in height. Adjust if different. -->
+            <ListBox Focusable="False" ItemsSource="{Binding Player2Moves}" PreviewMouseDown="Button_PreviewMouseDown">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={StaticResource MoveListToStringConverter}}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
+
+        <!-- Buttons to change move list state -->
+        <Button Content="{Binding Player1MoveListStateText}"
+                PreviewMouseDown="Button_PreviewMouseDown"
+                Margin="10,0,0,0"
+                Command="{Binding ChangePlayer1MoveListStateCommand}"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Grid.Row="2" />
+
+        <Button Grid.Row="2" Content="X"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Margin="0,0,0,10"
+                Width="30"
+                Height="30"
+                Background="Black"
+                Foreground="White"
+                BorderThickness="0"
+                Command="{Binding CloseCommand}" />
+
+        <Button Content="{Binding Player2MoveListStateText}"
+                PreviewMouseDown="Button_PreviewMouseDown"
+                Margin="10,0,0,0"
+                Command="{Binding ChangePlayer2MoveListStateCommand}"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Grid.Row="2" />
+    </Grid>
+</Window>

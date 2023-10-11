@@ -1,0 +1,347 @@
+{
+  "ASHRAH": {
+    "SpecialMoves": [
+      "Invoking The Light: D, B, FP",
+      "Heaven's Beacon: D, F, FP",
+      "Astral Projection: B, F, BP",
+      "God's Wrath: D, B, BP",
+      "Light Ascension: D, F, FK",
+      "Summoning The Darkness: D, B, FP",
+      "Hell's Pillar: D, F, FP",
+      "Hell's Pillar - Close: D, F, FP",
+      "Hell's Pillar - Far: D, F, FP",
+      "Astral Manifestation: B, F, BP",
+      "Demon's Wrath: D, B, BP",
+      "Dark Ascension: D, F, FK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Heavenly Light: D, F, D, BP",
+      "Fatality 2 - Threads of Ill Will: D, D, B, BK"
+    ]
+  },
+  "BARAKA": {
+    "SpecialMoves": [
+      "Bleeding Blade: B, F, FP",
+      "Blade Sparks: D, B, FP",
+      "Stab Stab: D, B, FP",
+      "Baraka Barrage: D, F, BP",
+      "Death Spin: D, F, BP",
+      "Chop Chop: B, F, FK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Split Decision: B, F, D, FP",
+      "Fatality 2 - Four Piece Kombo: F, B, D, BK"
+    ]
+  },
+  "GENERAL SHAO": {
+    "SpecialMoves": [
+      "Dark Energy: D, F, FP",
+      "Devastator: D, B, FK",
+      "Death Quake: D, B, BK",
+      "Power Strike: D, F, BK",
+      "Axe Recall: D, F, BK",
+      "Klassic Kahn: D, B, FK",
+      "Reverse Treechopper: D, F, BP",
+      "Treechopper: D, F, FP",
+      "Axe Quake: D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Spin Cycle: B, F, D, FP",
+      "Fatality 2 - Axe-ident: D, F, B, FP"
+    ]
+  },
+  "GERAS": {
+    "SpecialMoves": [
+      "Time Stop: B, F, FP",
+      "History Lesson: D, F, BP",
+      "Follow-Up Exam: D, B, BP",
+      "Redo: B, F, FK",
+      "Double Time: B, F, FK",
+      "Countdown: D, B, FK",
+      "Inevitable: D, B, FK",
+      "Denial: D, B, BK",
+      "Sandstorm: D, F, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Sand Storm: F, D, D, BK",
+      "Fatality 2 - Temporal Execution: D, F, B, FP"
+    ]
+  },
+  "HAVIK": {
+    "SpecialMoves": [
+      "Neoplasm: B, F, FP",
+      "Helping Hand: D, B, FP",
+      "Blood Bath: B, F, BP",
+      "Corpse Taunt: B, F, BP",
+      "Seeking Neoplasm: B, F, FK",
+      "Twisted Torso: D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Atomic Heart: D, F, D, BK",
+      "Fatality 2 - RAD-ius Incision: F, B, D, BP"
+    ]
+  },
+  "JOHNNY CAGE": {
+    "SpecialMoves": [
+      "Ball Buster: B, D, FP",
+      "Show Off: D, B, FP",
+      "Throwing Shade: F, D, B, BP",
+      "Rising Star: D, B, FK",
+      "Shadow Dash: D, F, FK",
+      "Shadow Kick: B, F, BK",
+      "Hype: F, D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Hollywood Walk of Pain: F, B, D, BP",
+      "Fatality 2 - Krash and Burn: F, D, B, BK"
+    ]
+  },
+  "KENSHI": {
+    "SpecialMoves": [
+      "Ancestral Guard: D, F, FP",
+      "Soul Charge: B, F, BP",
+      "Demon Drop: D, B, BP",
+      "Rising Karma: B, F, FK",
+      "Force Push: B, F, BK",
+      "Sento Stance: D, B, FP",
+      "Summon Ancestor: D, B, FP",
+      "Spirit Bop: FP",
+      "Double Dose: BP",
+      "Lunging Soul: FK",
+      "Banish Ancestor: D, B, FP",
+      "Spiritual Alignment: D, B, BP",
+      "Soaring Sento: D, B, FK",
+      "Teamwork: D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Blended: F, D, D, BP",
+      "Fatality 2 - Gyro-Nope: B, D, B, FP"
+    ]
+  },
+  "KITANA": {
+    "SpecialMoves": [
+      "Fan Toss: B, F, FP",
+      "Fan-Nado: D, B, FP",
+      "Princess Pirouette: D, F, BP",
+      "Square Wave: D, B, BP",
+      "Wind Bomb: B, D, F, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Royal Blender: D, F, D, BK",
+      "Fatality 2 - Last Kiss: D, D, B, BK"
+    ]
+  },
+  "KUNG LAO": {
+    "SpecialMoves": [
+      "Buzzsaw: B, F, FP",
+      "Hat Toss: D, B, FP",
+      "Shaolin Shimmy: B, F, BP",
+      "Kunoogie: D, B, BP",
+      "Shaolin Spin: D, U, FK",
+      "Soaring Monk/Dive Kick: D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Lao'd and Clear: B, F, B, BK",
+      "Fatality 2 - Slapped Together: B, D, D, FK"
+    ]
+  },
+  "LI MEI": {
+    "SpecialMoves": [
+      "Nova Blast: B, F, FP",
+      "Sky Lantern: D, B, BP",
+      "Shi Zi Lion: D, B, FK",
+      "Chain Reaction: B, F, BK",
+      "Flipping Heel Kick: D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Roman Candle: F, B, F, FK",
+      "Fatality 2 - Grand Finale: B, F, D, BK"
+    ]
+  },
+  "LIU KANG": {
+    "SpecialMoves": [
+      "Cosmic Flame: B, F, FP",
+      "Low Dragon: D, B, FP",
+      "Dragon's Tail: B, F, FK",
+      "Dancing Dragon: B, F, BK",
+      "Dragon's Breath: D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Double Dragon: D, F, B, BK",
+      "Fatality 2 - Spaghettification: B, F, B, FK"
+    ]
+  },
+  "MILEENA": {
+    "SpecialMoves": [
+      "Straight Sai: B, F, FP",
+      "Teleport Down: D, B, BP",
+      "Teleport Up: D, F, BP",
+      "Low Sai: B, F, FK",
+      "Roll: B, D, BK",
+      "Air Ball: D, B, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Appetizer: B, F, B, FP",
+      "Fatality 2 - Killopractic Adjustment: D, F, B, FK"
+    ]
+  },
+  "NITARA": {
+    "SpecialMoves": [
+      "Bad Blood: B, F, FP",
+      "Quick Taste: B, F, BP",
+      "Leap of Faith: D, B, BP",
+      "Dark Plunge: D, B, BK",
+      "Blood Sacrifice: D, F, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Vaeternus KomBAT: D, D, B, FP",
+      "Fatality 2 - Brake Check: B, D, B, BK"
+    ]
+  },
+  "RAIDEN": {
+    "SpecialMoves": [
+      "Electric Orb: D, F, FP",
+      "Razzle Dazzle: D, B, BP",
+      "Shocker: D, F, BP",
+      "Electric Fly: B, F, FK",
+      "Electromagnetic Storm: D, B, FK",
+      "Lightning Port: D, U"
+    ],
+    "Finishers": [
+      "Fatality 1 - The Storm's Arrival: B, F, B, BP",
+      "Fatality 2 - Ride The Lightning: D, F, B, FP"
+    ]
+  },
+  "RAIN": {
+    "SpecialMoves": [
+      "Water Beam: B, F, FP",
+      "Upflow: D, B, FP",
+      "Water Gate: D, B, BP",
+      "Water Gate Activate: D, B, BP",
+      "Water Gate Teleport: D, F, BP",
+      "Confluence Beam: D, F, BP",
+      "Water Gate Teleport to Oldest Portal: D, F, B, BP",
+      "Air Water Gate Teleport: D, F, BP",
+      "Air Confluence Beam: D, F, BP",
+      "Geyser: D, B, FK",
+      "Water Shield: F, D, B, BK",
+      "Ancient Trap: B, F, BK",
+      "Rain God: D, D, U"
+    ],
+    "Finishers": [
+      "Fatality 1 - The Red Sea: D, D, B, BK",
+      "Fatality 2 - Under Pressure: D, F, B, FK"
+    ]
+  },
+  "REIKO": {
+    "SpecialMoves": [
+      "Retaliation: D, B, FP",
+      "Pale Rider: B, D, F, FP",
+      "Assassin Throwing Stars: B, F, BP",
+      "Charging Pain: B, F, FK"
+    ],
+    "Finishers": [
+      "Fatality 1 - The Impaler: D, D, B, BP",
+      "Fatality 2 - Pinned Down: B, D, D, BK"
+    ]
+  },
+  "REPTILE": {
+    "SpecialMoves": [
+      "Acid Spit: D, F, FP",
+      "Dash Attack: B, F, BP",
+      "Force Ball: D, F, FK",
+      "Death Roll: B, F, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Indigestion: F, B, D, BK",
+      "Fatality 2 - Acid Reflux: F, D, B, FK"
+    ]
+  },
+  "SCORPION": {
+    "SpecialMoves": [
+      "Spear: B, F, FP",
+      "Blazing Charge: B, F, BP",
+      "Kyo Snag: B, F, BP",
+      "Kyo Snag - Close: D, B, BP",
+      "Twisted Kyo: D, B, BP",
+      "Demon Strike: D, F, FK",
+      "Double Strike: D, F, FK",
+      "Hapkido Strike: D, B, FK",
+      "Hell Strike: D, F, BK",
+      "Flame Swipe: D, B, BK",
+      "Air Flame Port: D, F, FK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Burned Out: B, D, F, FP",
+      "Fatality 2 - Searing Slash: D, B, D, BP"
+    ]
+  },
+  "SMOKE": {
+    "SpecialMoves": [
+      "Smokeball: D, B, FP",
+      "Smoke Uppercut: F, D, B, BK",
+      "Invisibility: D, D, F, FP",
+      "Spear: B, F, FP",
+      "Teleport Punch: D, B, FK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Smoked Out: D, B, F, BK",
+      "Fatality 2 - Smoke and Mirrors: F, B, F, FP"
+    ]
+  },
+  "SINDEL": {
+    "SpecialMoves": [
+      "Scream: B, F, FP",
+      "Low Fireball: D, F, FP",
+      "High Fireball: D, F, BP",
+      "Hair Whip: B, B, FK",
+      "Flying Kick: D, F, BK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Banshee Scream: B, B, D, FP",
+      "Fatality 2 - Hair-Raising Finish: D, D, F, BK"
+    ]
+  },
+  "SHANG TSUNG": {
+    "SpecialMoves": [
+      "Vampiric Touch: B, F, FP",
+      "Ground Eruption: D, B, FP",
+      "Soul Steal: D, F, BP",
+      "Skull: B, F, BP",
+      "Shapeshift: D, B, BP",
+      "Kintaro Morph: D, D, FK",
+      "Sheeva Morph: B, F, FK",
+      "Ermac Morph: D, D, BP"
+    ],
+    "Finishers": [
+      "Fatality 1 - Soul-Taker: B, F, D, FK",
+      "Fatality 2 - Flesh Feast: D, F, B, BP"
+    ]
+  },
+  "SUB-ZERO": {
+    "SpecialMoves": [
+      "Iceball: D, F, FP",
+      "Arctic Trap: D, B, FP",
+      "Slide: B, F, BK",
+      "Polar Punch: D, F, BP",
+      "Ice Stomp: D, B, FK"
+    ],
+    "Finishers": [
+      "Fatality 1 - Frost Bite: F, D, F, FK",
+      "Fatality 2 - Slice 'n Dice: B, F, B, BP"
+    ]
+  },
+  "TANYA": {
+    "SpecialMoves": [
+      "Heavenly Hand: D, F, FP",
+      "Seeking Guidance: D, F, FK",
+      "Umgadi Dodge: D, F, FK",
+      "Divine Protection: D, B, FP",
+      "Boomerang Attack: B, F, BP"
+    ],
+    "Finishers": [
+      "Fatality 1 - Ultimate Betrayal: F, D, B, FK",
+      "Fatality 2 - Say When: D, F, D, FP"
+    ]
+  }
+}
