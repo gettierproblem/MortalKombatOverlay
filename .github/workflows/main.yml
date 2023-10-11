@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: # Add this line to enable manual dispatch
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,7 +20,10 @@ jobs:
         dotnet-version: '7.0.x' # Adjust to your .NET version
 
     - name: Restore NuGet packages
-      run: dotnet restore
+      run: |
+        export EnableWindowsTargeting=true # Set the environment variable
+        dotnet restore
+      shell: bash
 
     - name: Build
       run: dotnet build --configuration Release
