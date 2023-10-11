@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # Add this line to enable manual dispatch
 
 jobs:
   build:
@@ -33,4 +34,4 @@ jobs:
       with:
         files: ./publish/*
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.MortalKombatOverlay }}
