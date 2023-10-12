@@ -12,8 +12,6 @@
 		<PackageReference Include="Emgu.CV.runtime.windows" Version="4.8.0.5324" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<PackageReference Include="PaddleOCRSharp" Version="4.0.1" />
-		<PackageReference Include="Tesseract" Version="5.2.0" />
-		<PackageReference Include="Tesseract.Drawing" Version="5.2.0" />
 	</ItemGroup>
 
 	<ItemGroup>

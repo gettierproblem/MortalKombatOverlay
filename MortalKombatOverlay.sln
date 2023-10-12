@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortalKombatOverlay", "Mort
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortalKombatOverlayTest", "MortalKombatOverlayTest\MortalKombatOverlayTest.csproj", "{6F8039C6-04AA-4A96-BC5F-1E2A04E9E210}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortalKombatOCRWrapper", "MortalKombatOCRWrapper\MortalKombatOCRWrapper.csproj", "{89A8D2FC-D1CF-46D7-8288-3AC3E938F2DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortalKombatOCRWrapper", "MortalKombatOCRWrapper\MortalKombatOCRWrapper.csproj", "{89A8D2FC-D1CF-46D7-8288-3AC3E938F2DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

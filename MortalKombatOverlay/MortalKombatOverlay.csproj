@@ -6,11 +6,12 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
+        <PublishSingleFile>true</PublishSingleFile>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        <SelfContained>false</SelfContained>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<None Remove="Resources\Odense.ttf" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\MortalKombatOCRWrapper\MortalKombatOCRWrapper.csproj" />
@@ -21,7 +22,7 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Resource>
 	</ItemGroup>
-
+	
 	<ItemGroup>
 	  <None Update="Resources\mortal_kombat_move_list.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

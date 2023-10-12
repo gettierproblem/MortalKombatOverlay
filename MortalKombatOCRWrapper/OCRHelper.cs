@@ -2,7 +2,6 @@
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
-using Tesseract;
 
 namespace MortalKombatOCRWrapper;
 
@@ -169,8 +168,5 @@ public class OcrHelper
         return distances[lengthA, lengthB];
     }
 
-    private static Rectangle ConvertRect(Rect rect)
-    {
-        return new Rectangle(rect.X1, rect.Y1, rect.Width, rect.Height);
-    }
+
 }
