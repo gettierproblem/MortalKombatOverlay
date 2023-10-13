@@ -7,6 +7,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="mortal kombat.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="resources\mortal kombat.txt">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Emgu.CV" Version="4.8.0.5324" />
 		<PackageReference Include="Emgu.CV.Bitmap" Version="4.8.0.5324" />
 		<PackageReference Include="Emgu.CV.runtime.windows" Version="4.8.0.5324" />
@@ -15,10 +25,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="tessdata\eng.traineddata">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="tessdata\mortal kombat.txt">
+		<None Update="resources\eng.traineddata">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>

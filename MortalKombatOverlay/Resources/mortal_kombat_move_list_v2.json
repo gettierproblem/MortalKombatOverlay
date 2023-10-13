@@ -1,7 +1,7 @@
 {
     "ASHRAH": {
         "SpecialMoves": {
-            "Invoking The Light": [
+            "Invoking The Light/Summoning The Darkness": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -15,7 +15,7 @@
                     "value": "FP"
                 }
             ],
-            "Heaven's Beacon": [
+            "Heaven's Beacon/Hell's Pillar": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -29,105 +29,7 @@
                     "value": "FP"
                 }
             ],
-            "Astral Projection": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "God's Wrath": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Light Ascension": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Summoning The Darkness": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Hell's Pillar": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Hell's Pillar - Close": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Hell's Pillar - Far": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Astral Manifestation": [
+            "Astral Projection/Manifestation": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -141,7 +43,7 @@
                     "value": "BP"
                 }
             ],
-            "Demon's Wrath": [
+            "Demon/God's Wrath": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -155,7 +57,7 @@
                     "value": "BP"
                 }
             ],
-            "Dark Ascension": [
+            "Dark/Light Ascension": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -171,7 +73,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Heavenly Light": [
+            "Heavenly Light": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -189,7 +91,7 @@
                     "value": "BP"
                 }
             ],
-            "Fatality 2 - Threads of Ill Will": [
+            "Threads of Ill Will": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -225,7 +127,7 @@
                     "value": "FP"
                 }
             ],
-            "Blade Sparks": [
+            "(Air) Blade Sparks": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -267,7 +169,7 @@
                     "value": "BP"
                 }
             ],
-            "Death Spin": [
+            "(Air) Death Spin": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -297,7 +199,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Split Decision": [
+            "Split Decision": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -315,7 +217,7 @@
                     "value": "FP"
                 }
             ],
-            "Fatality 2 - Four Piece Kombo": [
+            "Four Piece Kombo": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -465,7 +367,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Spin Cycle": [
+            "Spin Cycle": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -483,7 +385,7 @@
                     "value": "FP"
                 }
             ],
-            "Fatality 2 - Axe-ident": [
+            "Axe-ident": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -561,20 +463,6 @@
                     "value": "FK"
                 }
             ],
-            "Double Time": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
             "Countdown": [
                 {
                     "type": "direction",
@@ -633,7 +521,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Sand Storm": [
+            "Sand Storm": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -651,7 +539,7 @@
                     "value": "BK"
                 }
             ],
-            "Fatality 2 - Temporal Execution": [
+            "Temporal Execution": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -759,7 +647,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Atomic Heart": [
+            "Atomic Heart": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -777,7 +665,7 @@
                     "value": "BK"
                 }
             ],
-            "Fatality 2 - RAD-ius Incision": [
+            "RAD-ius Incision": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -907,7 +795,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Hollywood Walk of Pain": [
+            "Hollywood Walk of Pain": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -925,7 +813,7 @@
                     "value": "BP"
                 }
             ],
-            "Fatality 2 - Krash and Burn": [
+            "Krash and Burn": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -946,182 +834,136 @@
         }
     },
     "KENSHI": {
-        "SpecialMoves": {
-            "Ancestral Guard": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Soul Charge": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Demon Drop": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Rising Karma": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Force Push": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Sento Stance": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Summon Ancestor": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Spirit Bop": [
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Double Dose": [
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Lunging Soul": [
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Banish Ancestor": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Spiritual Alignment": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Soaring Sento": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Teamwork": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ]
-        },
+      "SpecialMoves": {
+        "Ancestral Guard": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Soul Charge": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Demon Drop": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Rising Karma": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Force Push": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "(Sento) Summon/Banish Ancestor": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "(Sento) Spiritual Alignment": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "(Sento) Soaring Sento": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "(Sento) Teamwork": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - Blended": [
+            "Blended": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -1139,7 +981,7 @@
                     "value": "BP"
                 }
             ],
-            "Fatality 2 - Gyro-Nope": [
+            "Gyro-Nope": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1160,84 +1002,98 @@
         }
     },
     "KITANA": {
-        "SpecialMoves": {
-            "Fan Toss": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Fan-Nado": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Princess Pirouette": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Square Wave": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Wind Bomb": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ]
-        },
+      "SpecialMoves": {
+        "Fan Toss": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Fan-Nado": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Princess Pirouette": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Square Wave": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Fancy Flick": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Wind Bomb": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - Royal Blender": [
+            "Royal Blender": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1255,7 +1111,7 @@
                     "value": "BK"
                 }
             ],
-            "Fatality 2 - Last Kiss": [
+            "Last Kiss": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1290,149 +1146,7 @@
                     "type": "button",
                     "value": "FP"
                 }
-            ],
-            "Dive Kick": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Teleport": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "U"
-                }
-            ],
-            "Air Teleport": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "U"
-                }
-            ],
-            "Chain Fist": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Razor Edge": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Whirlwind Kick": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Orbiting Hat": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Air Orbiting Hat": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Amplify Hat": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Amplify Razor Edge": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Vortex": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
+            ],    
             "Hat Toss": [
                 {
                     "type": "direction",
@@ -1461,14 +1175,14 @@
                     "value": "BP"
                 }
             ],
-            "Kunoogie": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
+            "Kung-Kussion": [
                 {
                     "type": "direction",
                     "value": "B"
+                },
+                {
+                    "type": "direction",
+                    "value": "F"
                 },
                 {
                     "type": "button",
@@ -1504,80 +1218,44 @@
                 }
             ]
         },
-        "Finishers": {
-            "Fatality 1 - Splitting Hairs": [
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Fatality 2 - Top of the World": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Fatality 1 - Lao'd and Clear": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Fatality 2 - Slapped Together": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ]
-        }
+      "Finishers": {
+        "Lao'd and Clear": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "Slapped Together": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ]
+      }
     },
     "LI MEI": {
         "SpecialMoves": {
@@ -1637,7 +1315,7 @@
                     "value": "BK"
                 }
             ],
-            "Flipping Heel Kick": [
+            "(Air) Flipping Heel Kick": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1653,7 +1331,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Roman Candle": [
+            "Roman Candle": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -1671,7 +1349,7 @@
                     "value": "FK"
                 }
             ],
-            "Fatality 2 - Grand Finale": [
+            "Grand Finale": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1765,7 +1443,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Double Dragon": [
+            "Double Dragon": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1783,7 +1461,7 @@
                     "value": "BK"
                 }
             ],
-            "Fatality 2 - Spaghettification": [
+            "Spaghettification": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1875,7 +1553,7 @@
                     "value": "BK"
                 }
             ],
-            "Air Ball": [
+            " (Air) Air Ball": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1891,7 +1569,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - Appetizer": [
+            "Appetizer": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1909,7 +1587,7 @@
                     "value": "FP"
                 }
             ],
-            "Fatality 2 - Killopractic Adjustment": [
+            "Killopractic Adjustment": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1930,80 +1608,94 @@
         }
     },
     "NITARA": {
-        "SpecialMoves": {
-            "Bad Blood": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Quick Taste": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Leap of Faith": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Dark Plunge": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Blood Sacrifice": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ]
-        },
+      "SpecialMoves": {
+        "Bad Blood": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Quick Taste": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Leap of Faith": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Bloody Bolt": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "(Air) Dark Plunge": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "Blood Sacrifice": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - Vaeternus KomBAT": [
+            "Vaeternus KomBAT": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2021,7 +1713,7 @@
                     "value": "FP"
                 }
             ],
-            "Fatality 2 - Brake Check": [
+            "Brake Check": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -2125,7 +1817,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - The Storm's Arrival": [
+            "The Storm's Arrival": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -2143,7 +1835,7 @@
                     "value": "BP"
                 }
             ],
-            "Fatality 2 - Ride The Lightning": [
+            "Ride The Lightning": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2235,66 +1927,6 @@
                     "value": "BP"
                 }
             ],
-            "Confluence Beam": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Water Gate Teleport to Oldest Portal": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Air Water Gate Teleport": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Air Confluence Beam": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
             "Geyser": [
                 {
                     "type": "direction",
@@ -2357,7 +1989,7 @@
             ]
         },
         "Finishers": {
-            "Fatality 1 - The Red Sea": [
+            "The Red Sea": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2375,7 +2007,7 @@
                     "value": "BK"
                 }
             ],
-            "Fatality 2 - Under Pressure": [
+            "Under Pressure": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2396,70 +2028,84 @@
         }
     },
     "REIKO": {
-        "SpecialMoves": {
-            "Retaliation": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Pale Rider": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Assassin Throwing Stars": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Charging Pain": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ]
-        },
+      "SpecialMoves": {
+        "Retaliation": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Pale Rider": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Assassin Throwing Stars": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Charging Pain": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Tactical Takedown": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - The Impaler": [
+            "The Impaler": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2477,7 +2123,7 @@
                     "value": "BP"
                 }
             ],
-            "Fatality 2 - Pinned Down": [
+            "Pinned Down": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -2498,241 +2144,260 @@
         }
     },
     "SINDEL": {
-        "SpecialMoves": {
-            "Scream": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Low Fireball": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "High Fireball": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Hair Whip": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Flying Kick": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ]
-        },
-        "Finishers": {
-            "Fatality 1 - Banshee Scream": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Fatality 2 - Hair-Raising Finish": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ]
-        }
+      "SpecialMoves": {
+        "Low Hairball": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Hairball": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Scream": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "(Air) Levitate": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Inspire": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Queen's Kommand": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "Kartwheel": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ]
+      },
+      "Finishers": {
+        "Hair Comes Trouble": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Fatality 2": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ]
+      }
     },
     "SHANG TSUNG": {
-        "SpecialMoves": {
-            "Vampiric Touch": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Ground Eruption": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Soul Steal": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Skull": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Shapeshift": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Kintaro Morph": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Sheeva Morph": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Ermac Morph": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ]
-        },
+      "SpecialMoves": {
+
+        "Age Morph": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "button",
+            "value": "S"
+          }
+        ],
+        "Form Stealer": [
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "Perfect Form": [
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "BK"
+          }
+        ],
+        "Spinning Spikes/Vicinity Slash": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Bed of Spikes/Injection": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Skull": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Triple Skull/Far Ground Skull": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - Soul-Taker": [
+            "Side Effects": [
                 {
                     "type": "direction",
                     "value": "B"
                 },
                 {
                     "type": "direction",
-                    "value": "F"
+                    "value": "D"
                 },
                 {
                     "type": "direction",
@@ -2740,17 +2405,17 @@
                 },
                 {
                     "type": "button",
-                    "value": "FK"
+                    "value": "BK"
                 }
             ],
-            "Fatality 2 - Flesh Feast": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
+            "Fatality 2": [
                 {
                     "type": "direction",
                     "value": "F"
+                },
+                {
+                    "type": "direction",
+                    "value": "D"
                 },
                 {
                     "type": "direction",
@@ -2764,66 +2429,94 @@
         }
     },
     "REPTILE": {
-        "SpecialMoves": {
-            "Acid Spit": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Dash Attack": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Force Ball": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Death Roll": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ]
-        },
+      "SpecialMoves": {
+        "Acid Spit": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Dash Attack": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Force Ball": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Death Roll": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "Invisibility": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "U"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "(Air) Falling Fangs": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - Indigestion": [
+            "Indigestion": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -2841,7 +2534,7 @@
                     "value": "BK"
                 }
             ],
-            "Fatality 2 - Acid Reflux": [
+            "Acid Reflux": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -2862,164 +2555,108 @@
         }
     },
     "SCORPION": {
-        "SpecialMoves": {
-            "Spear": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Blazing Charge": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Kyo Snag": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Kyo Snag - Close": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Twisted Kyo": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Demon Strike": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Double Strike": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Hapkido Strike": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Hell Strike": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Flame Swipe": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Air Flame Port": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ]
-        },
+      "SpecialMoves": {
+        "Spear": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Blazing Charge": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "(Air) Kyo Snag": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "(Air) Kyo Snag - Close": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Twisted Kyo": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ],
+        "Flame-Port": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Devouring Flame": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - Burned Out": [
+            "Burned Out": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -3037,7 +2674,7 @@
                     "value": "FP"
                 }
             ],
-            "Fatality 2 - Searing Slash": [
+            "Searing Slash": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3059,7 +2696,7 @@
     },
     "SMOKE": {
         "SpecialMoves": {
-            "Smokeball": [
+            "Shadow Blade": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3073,11 +2710,7 @@
                     "value": "FP"
                 }
             ],
-            "Smoke Uppercut": [
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
+            "Smoke Bomb": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3085,97 +2718,27 @@
                 {
                     "type": "direction",
                     "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Invisibility": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Spear": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Teleport Punch": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ]
-        },
-        "Finishers": {
-            "Fatality 1 - Smoke Out": [
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Fatality 2 - Hazy Thoughts": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
                 },
                 {
                     "type": "button",
                     "value": "BP"
                 }
             ],
-            "Fatality 1 - Smoked Out": [
+            "Vicious Vapors": [
+                {
+                    "type": "direction",
+                    "value": "B"
+                },
+                {
+                    "type": "direction",
+                    "value": "F"
+                },
+                {
+                    "type": "button",
+                    "value": "FK"
+                }
+            ],
+            "Smoke-Port": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3185,19 +2748,13 @@
                     "value": "B"
                 },
                 {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
                     "type": "button",
                     "value": "BK"
                 }
-            ],
-            "Fatality 2 - Smoke and Mirrors": [
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
+            ]
+        },
+        "Finishers": {
+            "Hazed and Infused": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -3207,15 +2764,37 @@
                     "value": "F"
                 },
                 {
+                    "type": "direction",
+                    "value": "D"
+                },
+                {
                     "type": "button",
                     "value": "FP"
+                }
+            ],
+            "Fatality 2": [
+                {
+                    "type": "direction",
+                    "value": "D"
+                },
+                {
+                    "type": "direction",
+                    "value": "F"
+                },
+                {
+                    "type": "direction",
+                    "value": "B"
+                },
+                {
+                    "type": "button",
+                    "value": "BP"
                 }
             ]
         }
     },
     "SUB-ZERO": {
         "SpecialMoves": {
-            "Freeze": [
+            "Ice Ball": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3229,77 +2808,7 @@
                     "value": "FP"
                 }
             ],
-            "Ground Freeze": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Slide": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Ice Shards": [
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Cold Shoulders": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Iceball": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Arctic Trap": [
+            "Ice Klone": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3313,10 +2822,10 @@
                     "value": "FP"
                 }
             ],
-            "Polar Punch": [
+            "Ice Klone Charge": [
                 {
                     "type": "direction",
-                    "value": "D"
+                    "value": "B"
                 },
                 {
                     "type": "direction",
@@ -3327,7 +2836,21 @@
                     "value": "BP"
                 }
             ],
-            "Ice Stomp": [
+            "Ice Slide": [
+                {
+                    "type": "direction",
+                    "value": "B"
+                },
+                {
+                    "type": "direction",
+                    "value": "F"
+                },
+                {
+                    "type": "button",
+                    "value": "FK"
+                }
+            ],
+            "(Air) Diving Glacier": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3338,12 +2861,26 @@
                 },
                 {
                     "type": "button",
-                    "value": "FK"
+                    "value": "BK"
+                }
+            ],
+            "Deadly Vapors": [
+                {
+                    "type": "direction",
+                    "value": "D"
+                },
+                {
+                    "type": "direction",
+                    "value": "F"
+                },
+                {
+                    "type": "button",
+                    "value": "BK"
                 }
             ]
         },
         "Finishers": {
-            "Fatality 1 - Iced Up": [
+            "Hairline Fracture": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -3354,235 +2891,111 @@
                 },
                 {
                     "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Fatality 2 - Chill Factor": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
                     "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
                 },
                 {
                     "type": "button",
                     "value": "BP"
                 }
             ],
-            "Fatality 1 - Frost Bite": [
+            "Fatality 2": [
                 {
                     "type": "direction",
                     "value": "F"
+                },
+                {
+                    "type": "direction",
+                    "value": "B"
                 },
                 {
                     "type": "direction",
                     "value": "D"
                 },
                 {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
                     "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Fatality 2 - Slice 'n Dice": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
+                    "value": "BK"
                 }
             ]
         }
     },
     "TANYA": {
-        "SpecialMoves": {
-            "Split Drop": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Surging Blast": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Air Spin": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Yrgian Punch": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Neck Snap": [
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "BK"
-                }
-            ],
-            "Heavenly Hand": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Seeking Guidance": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Umgadi Dodge": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
-            "Divine Protection": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Boomerang Attack": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ]
-        },
+      "SpecialMoves": {
+        "Heavenly Hand": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FP"
+          }
+        ],
+        "Seeking Guidance": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Divine Protection": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "FK"
+          }
+        ],
+        "Drill Kick": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ],
+        "Spinning Splits Kick": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BK"
+          }
+        ]
+      },
         "Finishers": {
-            "Fatality 1 - Drag and Drop": [
+            "Helping Hands": [
                 {
                     "type": "direction",
                     "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Fatality 2 - Twisted Loyalty": [
-                {
-                    "type": "direction",
-                    "value": "F"
                 },
                 {
                     "type": "direction",
@@ -3591,34 +3004,16 @@
                 {
                     "type": "direction",
                     "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ],
-            "Fatality 1 - Ultimate Betrayal": [
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
                 },
                 {
                     "type": "button",
                     "value": "FK"
                 }
             ],
-            "Fatality 2 - Say When": [
+            "Fatality 2": [
                 {
                     "type": "direction",
-                    "value": "D"
+                    "value": "B"
                 },
                 {
                     "type": "direction",

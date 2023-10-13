@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using Emgu.CV;
 using Emgu.CV.Structure;
@@ -16,7 +17,22 @@ public class PaddleOcrStrategy : IOcrStrategy
     });
 
     private static readonly Lazy<List<string>> _mkNames = new(() =>
-        File.ReadAllLines("tessdata/mortal kombat.txt").ToList());
+    {
+        var assembly = Assembly.GetExecutingAssembly();
+        var fileName = "mortal kombat.txt";
+
+        var resourceName = assembly.GetManifestResourceNames()
+            .First(str => str.EndsWith(fileName));
+
+        using (var stream = assembly.GetManifestResourceStream(resourceName))
+        using (var reader = new StreamReader(stream))
+        {
+            var names = reader.ReadToEnd();
+
+            // Deserialize the JSON data into CharacterDataMap
+            return new List<string>(names.Split("\r\n"));
+        }
+    });
 
     public string ExtractTextFromImage(UMat image, Rectangle roi)
     {
@@ -32,6 +48,9 @@ public class PaddleOcrStrategy : IOcrStrategy
                 .Select(block => block.Text).FirstOrDefault();
 
             recognizedText = OcrHelper.FindClosestMatch(recognizedText, _mkNames.Value);
+
+            // avoid switching to baraka during pause menu
+            if (recognizedText == "BASIC ATTACKS") return string.Empty;
 
             return recognizedText ?? string.Empty;
         }

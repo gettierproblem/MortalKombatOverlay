@@ -10,7 +10,21 @@
         <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
         <SelfContained>false</SelfContained>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+        <Title>Mortal Kombat Overlay</Title>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\icon.ico" />
+	  <None Remove="Resources\mortal_kombat_move_list_v2.json" />
+	  <None Remove="Resources\OIG.jfif" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Resources\icon.ico">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
 
 
 	<ItemGroup>
@@ -18,16 +32,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Resource Include="Resources\Odense.ttf">
+		<EmbeddedResource Include="Resources\mortal_kombat_move_list_v2.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Resources\Odense.ttf">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Resource>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Resources\OIG.jfif" />
 	</ItemGroup>
 	
 	<ItemGroup>
 	  <None Update="Resources\mortal_kombat_move_list.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Resources\mortal_kombat_move_list_v2.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>

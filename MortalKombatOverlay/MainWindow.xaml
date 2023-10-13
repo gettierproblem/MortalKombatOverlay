@@ -5,18 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MortalKombatOverlay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="Mortal Kombat Overlay" Height="450" Width="800"
         WindowStyle="None"
         AllowsTransparency="True"
-        MouseDown="Window_MouseDown">
+        MouseDown="Window_MouseDown"
+        >
 
     <Window.DataContext>
         <local:GameWatcherViewModel />
     </Window.DataContext>
+    <Window.Resources>
+        <local:MoveListToButtonConverter x:Key="MoveListToButtonConverter"/>
+        <Style x:Key="ConditionalBackgroundButtonStyle" TargetType="Button">
+            <EventSetter Event="PreviewMouseDown" Handler="Button_PreviewMouseDown"/>
+            <Setter Property="Margin" Value ="10"/>
+            <Setter Property="Background"  Value="Black"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="Border" Background="{TemplateBinding Background}" CornerRadius="5">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimation Storyboard.TargetName="Border" 
+                                                            Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" 
+                                                            To="Gray" Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter Margin="10"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMortalKombatRunning}" Value="False">
+                    <Setter Property="Opacity" Value="1"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsMortalKombatRunning}" Value="True">
+                    <Setter Property="Opacity" Value=".7"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Window.Style>
         <Style TargetType="Window">
             <Setter Property="Topmost" Value="False" />
-            <Setter Property="Background" Value="White" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <ImageBrush  TileMode="Tile" Viewport="0,0,1024,1042" ViewportUnits="Absolute" ImageSource="pack://application:,,,/MortalKombatOverlay;component/Resources/OIG.jfif"/>
+                </Setter.Value>
+            </Setter>
             <Style.Triggers>
                 <DataTrigger Binding="{Binding IsMortalKombatRunning}" Value="True">
                     <Setter Property="Topmost" Value="True" />
@@ -32,6 +74,32 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TitleTextBlock" 
+                   Text="Mortal Kombat Overlay"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="10">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" 
+                                  Direction="315" 
+                                  ShadowDepth="5" 
+                                  Opacity="0.7"/>
+            </TextBlock.Effect>
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsMortalKombatRunning}" Value="False">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
 
         <!-- Player Names -->
         <TextBlock Text="{Binding Player1, FallbackValue='Player1'}"
@@ -50,7 +118,7 @@
                       Margin="10"
                       Grid.Row="1"
                       Focusable="False"
-                      Height="200"
+                      Height="400"
                       VerticalScrollBarVisibility="Auto"
                       PreviewMouseDown="Button_PreviewMouseDown">
 
@@ -84,33 +152,35 @@
             <ListBox Focusable="False" ItemsSource="{Binding Player1Moves}" PreviewMouseDown="Button_PreviewMouseDown">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Converter={StaticResource MoveListToStringConverter}}" />
+                        <ContentControl Content="{Binding Converter={StaticResource MoveListToButtonConverter}}" />
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
         </ScrollViewer>
 
         <!-- Launch Mortal Kombat Button -->
-        <Button Grid.Row="1" Content="Launch Mortal Kombat"
+        <Button Grid.Row="1" 
+                Content="Launch Mortal Kombat"
                 Command="{Binding LaunchMortalKombatCommand}"
                 Visibility="{Binding IsMortalKombatRunning, Converter={StaticResource BooleanToVisibilityConverter}}"
+                Style="{StaticResource ConditionalBackgroundButtonStyle}"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Height="26" />
+                />
 
         <!-- Move Lists for Player 2 -->
         <ScrollViewer HorizontalAlignment="Right"
                       VerticalAlignment="Center"
                       Margin="10"
                       Grid.Row="1"
-                      Height="200"
+                      Height="400"
                       Focusable="False" PreviewMouseDown="Button_PreviewMouseDown"
                       VerticalScrollBarVisibility="Auto">
             <!-- Assuming each line is 20 units in height. Adjust if different. -->
             <ListBox Focusable="False" ItemsSource="{Binding Player2Moves}" PreviewMouseDown="Button_PreviewMouseDown">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Converter={StaticResource MoveListToStringConverter}}" />
+                        <ContentControl Content="{Binding Converter={StaticResource MoveListToButtonConverter}}" />
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
@@ -118,30 +188,25 @@
 
         <!-- Buttons to change move list state -->
         <Button Content="{Binding Player1MoveListStateText}"
-                PreviewMouseDown="Button_PreviewMouseDown"
-                Margin="10,0,0,0"
-                Command="{Binding ChangePlayer1MoveListStateCommand}"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
+                Command="{Binding ChangePlayer1MoveListStateCommand}"
+                Style="{StaticResource ConditionalBackgroundButtonStyle}"
                 Grid.Row="2" />
 
-        <Button Grid.Row="2" Content="X"
+        <Button Grid.Row="2" Content="Close"
+                Grid.Column="1"
+                Style="{StaticResource ConditionalBackgroundButtonStyle}"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
-                Margin="0,0,0,10"
-                Width="30"
-                Height="30"
-                Background="Black"
-                Foreground="White"
-                BorderThickness="0"
                 Command="{Binding CloseCommand}" />
 
         <Button Content="{Binding Player2MoveListStateText}"
-                PreviewMouseDown="Button_PreviewMouseDown"
-                Margin="10,0,0,0"
                 Command="{Binding ChangePlayer2MoveListStateCommand}"
+                Style="{StaticResource ConditionalBackgroundButtonStyle}"
+                Grid.Row="2" 
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
-                Grid.Row="2" />
+                />
     </Grid>
 </Window>

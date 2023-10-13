@@ -6,6 +6,8 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
@@ -288,12 +290,21 @@ public class GameWatcherViewModel : INotifyPropertyChanged
     {
         try
         {
-            var jsonFilePath =
-                "Resources/mortal_kombat_move_list_v2.json"; // Replace with your JSON file path
-            var jsonText = File.ReadAllText(jsonFilePath);
+            var assembly = Assembly.GetExecutingAssembly();
+            var fileName = "mortal_kombat_move_list_v2.json";
 
-            // Deserialize the JSON data into CharacterDataMap
-            CharacterDataMap = JsonConvert.DeserializeObject<Dictionary<string, CharacterData>>(jsonText);
+            string resourceName = assembly.GetManifestResourceNames()
+                .Single(str => str.EndsWith(fileName));
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string jsonText = reader.ReadToEnd();
+
+                // Deserialize the JSON data into CharacterDataMap
+                CharacterDataMap = JsonConvert.DeserializeObject<Dictionary<string, CharacterData>>(jsonText);
+            }
+
         }
         catch (Exception ex)
         {
