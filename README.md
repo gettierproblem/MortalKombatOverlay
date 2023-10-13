@@ -33,7 +33,7 @@ Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal 
 3. The overlay will automatically update to display move lists when a game starts in any mode.  Here is a picture of the overlay in action:
    ![image](https://github.com/taferro/MortalKombatOverlay/assets/2585255/eb712be4-71e1-44b8-a9fb-7e1e57c94e05)
 
-4. Toggle between different move list states for each player using the provided buttons.
+4. Toggle between different move list states for each player using the provided buttons.  The four states are "special moves only", "fatalities only", "hidden", "all moves."  These can be toggled individually per player.
 
 5. Close the application by clicking the "Close" button in the bottom of the overlay.
 
