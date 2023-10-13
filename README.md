@@ -13,7 +13,7 @@ Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal 
 ## Prerequisites
 
 - Windows operating system.
-- .NET Framework. 7.
+- .NET Framework 7.
 - Mortal Kombat™ 1 installed via Steam.
 
 ## Installation
