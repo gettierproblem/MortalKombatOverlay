@@ -37,6 +37,7 @@ Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal 
 
 1. App is ~500mb.  It uses OCR to scrape the text from the screen, and PaddleOCR/OpenCV dlls are huge.
 2. Switching between move list states is slow.
+3. Application is not signed.
 
 ## License
 
