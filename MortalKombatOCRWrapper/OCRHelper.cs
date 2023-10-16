@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics;
+using System.Drawing;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
@@ -23,11 +24,21 @@ public class OcrHelper
 
     public static List<string> ExtractCharacterNames(UMat image, IOcrStrategy? ocrStrategy)
     {
-        var gameRect = FindGameScreenBounds(image);
+        UMat processed;
+        try
+        {
+            var gameRect = FindGameScreenBounds(image);
 
-        var processed = new UMat(image, gameRect);
+            processed = new UMat(image, gameRect);
 
-        ocrStrategy.Preprocess(processed);
+
+            ocrStrategy.Preprocess(processed);
+        }
+        catch (Exception e)
+        {
+            Debug.Write(e.Message);
+            processed = image; // skip image processing and dump the image into the ocr
+        }
 
         var playerNames = new List<string>();
 

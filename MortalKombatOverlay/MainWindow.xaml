@@ -72,7 +72,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" /> <!-- Row for the first checkbox -->
+            <RowDefinition Height="Auto" /> <!-- New row for the second checkbox -->
+            <RowDefinition Height="Auto" /> <!-- Adjusted row for buttons -->
         </Grid.RowDefinitions>
 
         <TextBlock x:Name="TitleTextBlock" 
@@ -152,7 +154,7 @@
             <ListBox Focusable="False" ItemsSource="{Binding Player1Moves}" PreviewMouseDown="Button_PreviewMouseDown">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <ContentControl Content="{Binding Converter={StaticResource MoveListToButtonConverter}}" />
+                        <ContentControl Content="{Binding Converter={StaticResource MoveListToButtonConverter}, ConverterParameter=Player1}" />
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
@@ -165,8 +167,36 @@
                 Visibility="{Binding IsMortalKombatRunning, Converter={StaticResource BooleanToVisibilityConverter}}"
                 Style="{StaticResource ConditionalBackgroundButtonStyle}"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                />
+                VerticalAlignment="Center"/>
+        <Grid Grid.Row="2">
+            <Grid.Style>
+                <Style TargetType="Grid">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsMortalKombatRunning}" Value="True">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Grid.Style>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- CheckBox for UseNumberNotation -->
+            <CheckBox Grid.Row="0" Grid.Column="0" IsChecked="{Binding Source={StaticResource MoveListToButtonConverter}, Path=UseNumberNotation, Mode=TwoWay}"
+                      HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,5,0"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Use Number Notation" TextAlignment="Left" VerticalAlignment="Center"/>
+
+            <!-- CheckBox for ReverseDirectionsForP2 -->
+            <CheckBox Grid.Row="1" Grid.Column="0" IsChecked="{Binding Source={StaticResource MoveListToButtonConverter}, Path=ReverseDirectionsForP2, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,5,0"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="Reverse Directions for P2" TextAlignment="Left" VerticalAlignment="Center"/>
+        </Grid>
+
 
         <!-- Move Lists for Player 2 -->
         <ScrollViewer HorizontalAlignment="Right"
@@ -180,7 +210,7 @@
             <ListBox Focusable="False" ItemsSource="{Binding Player2Moves}" PreviewMouseDown="Button_PreviewMouseDown">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <ContentControl Content="{Binding Converter={StaticResource MoveListToButtonConverter}}" />
+                        <ContentControl Content="{Binding Converter={StaticResource MoveListToButtonConverter}, ConverterParameter=Player2}" />
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
@@ -192,9 +222,9 @@
                 VerticalAlignment="Top"
                 Command="{Binding ChangePlayer1MoveListStateCommand}"
                 Style="{StaticResource ConditionalBackgroundButtonStyle}"
-                Grid.Row="2" />
+                Grid.Row="4" />
 
-        <Button Grid.Row="2" Content="Close"
+        <Button Grid.Row="4" Content="Close"
                 Grid.Column="1"
                 Style="{StaticResource ConditionalBackgroundButtonStyle}"
                 HorizontalAlignment="Center"
@@ -204,7 +234,7 @@
         <Button Content="{Binding Player2MoveListStateText}"
                 Command="{Binding ChangePlayer2MoveListStateCommand}"
                 Style="{StaticResource ConditionalBackgroundButtonStyle}"
-                Grid.Row="2" 
+                Grid.Row="4" 
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
                 />

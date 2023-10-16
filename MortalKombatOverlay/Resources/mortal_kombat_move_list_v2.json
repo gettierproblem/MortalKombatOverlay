@@ -73,7 +73,7 @@
             ]
         },
         "Finishers": {
-            "Heavenly Light": [
+            "(Mid) Heavenly Light": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -91,7 +91,7 @@
                     "value": "BP"
                 }
             ],
-            "Threads of Ill Will": [
+            "(Mid) Threads of Ill Will": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -199,7 +199,7 @@
             ]
         },
         "Finishers": {
-            "Split Decision": [
+            "(Close) Split Decision": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -217,7 +217,7 @@
                     "value": "FP"
                 }
             ],
-            "Four Piece Kombo": [
+            "(Close) Four Piece Kombo": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -367,7 +367,7 @@
             ]
         },
         "Finishers": {
-            "Spin Cycle": [
+            "(Mid) Spin Cycle": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -385,7 +385,7 @@
                     "value": "FP"
                 }
             ],
-            "Axe-ident": [
+            "(Mid) Axe-ident": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -477,20 +477,6 @@
                     "value": "FK"
                 }
             ],
-            "Inevitable": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "FK"
-                }
-            ],
             "Denial": [
                 {
                     "type": "direction",
@@ -521,7 +507,7 @@
             ]
         },
         "Finishers": {
-            "Sand Storm": [
+            "(Mid) Sand Storm": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -539,7 +525,7 @@
                     "value": "BK"
                 }
             ],
-            "Temporal Execution": [
+            "(Close) Temporal Execution": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -647,7 +633,7 @@
             ]
         },
         "Finishers": {
-            "Atomic Heart": [
+            "(Close) Atomic Heart": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -665,7 +651,7 @@
                     "value": "BK"
                 }
             ],
-            "RAD-ius Incision": [
+            "(Close) RAD-ius Incision": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -795,7 +781,7 @@
             ]
         },
         "Finishers": {
-            "Hollywood Walk of Pain": [
+            "(Close) Hollywood Walk of Pain": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -813,7 +799,7 @@
                     "value": "BP"
                 }
             ],
-            "Krash and Burn": [
+            "(Mid) Drive-by": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -963,7 +949,7 @@
         ]
       },
         "Finishers": {
-            "Blended": [
+            "(Mid) Blended": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -981,7 +967,7 @@
                     "value": "BP"
                 }
             ],
-            "Gyro-Nope": [
+            "(Mid) Gyro-Nope": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1093,7 +1079,7 @@
         ]
       },
         "Finishers": {
-            "Royal Blender": [
+            "(Far) Royal Blender": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1111,7 +1097,7 @@
                     "value": "BK"
                 }
             ],
-            "Last Kiss": [
+            "(Close) Last Kiss": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1219,7 +1205,7 @@
             ]
         },
       "Finishers": {
-        "Lao'd and Clear": [
+        "(Mid) Lao'd and Clear": [
           {
             "type": "direction",
             "value": "B"
@@ -1237,7 +1223,7 @@
             "value": "BK"
           }
         ],
-        "Slapped Together": [
+        "(Close) Slapped Together": [
           {
             "type": "direction",
             "value": "B"
@@ -1331,7 +1317,7 @@
             ]
         },
         "Finishers": {
-            "Roman Candle": [
+            "(Close) Roman Candle": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -1349,7 +1335,7 @@
                     "value": "FK"
                 }
             ],
-            "Grand Finale": [
+            "(Close) Grand Finale": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1443,7 +1429,7 @@
             ]
         },
         "Finishers": {
-            "Double Dragon": [
+            "(Close) Double Dragon": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1461,7 +1447,7 @@
                     "value": "BK"
                 }
             ],
-            "Spaghettification": [
+            "(Close) Spaghettification": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1569,7 +1555,7 @@
             ]
         },
         "Finishers": {
-            "Appetizer": [
+            "(Close) Appetizer": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1587,7 +1573,7 @@
                     "value": "FP"
                 }
             ],
-            "Killopractic Adjustment": [
+            "(Close) Killopractic Adjustment": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1695,7 +1681,7 @@
         ]
       },
         "Finishers": {
-            "Vaeternus KomBAT": [
+            "(Mid) Vaeternus KomBAT": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1713,7 +1699,7 @@
                     "value": "FP"
                 }
             ],
-            "Brake Check": [
+            "(Mid to Far) Brake Check": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1817,7 +1803,7 @@
             ]
         },
         "Finishers": {
-            "The Storm's Arrival": [
+            "(Close) The Storm's Arrival": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -1835,7 +1821,7 @@
                     "value": "BP"
                 }
             ],
-            "Ride The Lightning": [
+            "(Mid or Far) Ride The Lightning": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -1883,20 +1869,6 @@
                 {
                     "type": "button",
                     "value": "FP"
-                }
-            ],
-            "Water Gate": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
                 }
             ],
             "Water Gate Activate": [
@@ -1989,7 +1961,7 @@
             ]
         },
         "Finishers": {
-            "The Red Sea": [
+            "(Close) The Red Sea": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2007,7 +1979,7 @@
                     "value": "BK"
                 }
             ],
-            "Under Pressure": [
+            "(Mid) Under Pressure": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2105,7 +2077,7 @@
         ]
       },
         "Finishers": {
-            "The Impaler": [
+            "(Mid) The Impaler": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2123,7 +2095,7 @@
                     "value": "BP"
                 }
             ],
-            "Pinned Down": [
+            "(Close) Pinned Down": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -2245,7 +2217,7 @@
         ]
       },
       "Finishers": {
-        "Hair Comes Trouble": [
+        "(Mid) Hair Comes Trouble": [
           {
             "type": "direction",
             "value": "D"
@@ -2263,7 +2235,7 @@
             "value": "FP"
           }
         ],
-        "Fatality 2": [
+        "(Mid to Far) Fatality 2": [
           {
             "type": "direction",
             "value": "B"
@@ -2390,7 +2362,7 @@
         ]
       },
         "Finishers": {
-            "Side Effects": [
+            "(Close) Side Effects": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -2408,7 +2380,7 @@
                     "value": "BK"
                 }
             ],
-            "Fatality 2": [
+            "(Mid) Fatality 2": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -2516,7 +2488,7 @@
         ]
       },
         "Finishers": {
-            "Indigestion": [
+            "(Mid) Indigestion": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -2534,7 +2506,7 @@
                     "value": "BK"
                 }
             ],
-            "Acid Reflux": [
+            "(Close) Acid Reflux": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -2655,44 +2627,44 @@
           }
         ]
       },
-        "Finishers": {
-            "Burned Out": [
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "F"
-                },
-                {
-                    "type": "button",
-                    "value": "FP"
-                }
-            ],
-            "Searing Slash": [
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "direction",
-                    "value": "B"
-                },
-                {
-                    "type": "direction",
-                    "value": "D"
-                },
-                {
-                    "type": "button",
-                    "value": "BP"
-                }
-            ]
-        }
+      "Finishers": {
+        "(Mid) Eye-Palling Victory": [
+          {
+            "type": "direction",
+            "value": "D"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "G"
+          }
+        ],
+        "(Mid) Gang War": [
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "direction",
+            "value": "F"
+          },
+          {
+            "type": "direction",
+            "value": "B"
+          },
+          {
+            "type": "button",
+            "value": "BP"
+          }
+        ]
+      }
     },
     "SMOKE": {
         "SpecialMoves": {
@@ -2754,7 +2726,7 @@
             ]
         },
         "Finishers": {
-            "Hazed and Infused": [
+            "(Any) Hazed and Infused": [
                 {
                     "type": "direction",
                     "value": "B"
@@ -2772,7 +2744,7 @@
                     "value": "FP"
                 }
             ],
-            "Fatality 2": [
+            "(Any) Fatality 2": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -2880,7 +2852,7 @@
             ]
         },
         "Finishers": {
-            "Hairline Fracture": [
+            "(Any) Hairline Fracture": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -2898,7 +2870,7 @@
                     "value": "BP"
                 }
             ],
-            "Fatality 2": [
+            "(Close) Fatality 2": [
                 {
                     "type": "direction",
                     "value": "F"
@@ -2992,7 +2964,7 @@
         ]
       },
         "Finishers": {
-            "Helping Hands": [
+            "(Close) Helping Hands": [
                 {
                     "type": "direction",
                     "value": "D"
@@ -3010,7 +2982,7 @@
                     "value": "FK"
                 }
             ],
-            "Fatality 2": [
+            "(Close to Mid) Fatality 2": [
                 {
                     "type": "direction",
                     "value": "B"

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,8 +10,43 @@ using System.Windows.Media.Effects;
 
 namespace MortalKombatOverlay
 {
-    public class MoveListToButtonConverter : IValueConverter
+    public class MoveListToButtonConverter : IValueConverter, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private bool _useNumberNotation = true;
+        public bool UseNumberNotation
+        {
+            get { return _useNumberNotation; }
+            set
+            {
+                if (_useNumberNotation != value)
+                {
+                    _useNumberNotation = value;
+                    OnPropertyChanged("UseNumberNotation");
+                }
+            }
+        }
+
+        private bool _reverseDirectionsForP2 = true;
+        public bool ReverseDirectionsForP2
+        {
+            get { return _reverseDirectionsForP2; }
+            set
+            {
+                if (_reverseDirectionsForP2 != value)
+                {
+                    _reverseDirectionsForP2 = value;
+                    OnPropertyChanged("ReverseDirectionsForP2");
+                }
+            }
+        }
+        
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is KeyValuePair<string, List<MovePart>> moveData)
@@ -22,7 +58,6 @@ namespace MortalKombatOverlay
                     Orientation = Orientation.Horizontal
                 };
 
-                // Add move name
                 var moveNameTextBlock = new TextBlock
                 {
                     Text = moveName + ": ",
@@ -30,7 +65,6 @@ namespace MortalKombatOverlay
                 };
                 panel.Children.Add(moveNameTextBlock);
 
-                // Create a drop shadow effect
                 var shadow = new DropShadowEffect
                 {
                     Color = Colors.Black,
@@ -38,6 +72,8 @@ namespace MortalKombatOverlay
                     ShadowDepth = 5,
                     Opacity = 0.7
                 };
+
+                var shouldReverse = (string)parameter == "Player2" && ReverseDirectionsForP2;
 
                 foreach (var movePart in moveParts)
                 {
@@ -48,10 +84,10 @@ namespace MortalKombatOverlay
                     switch (movePart.Value)
                     {
                         case "F":
-                            content = "→";
+                            content = shouldReverse ? "←" : "→";
                             break;
                         case "B":
-                            content = "←";
+                            content = shouldReverse ? "→" : "←";
                             break;
                         case "U":
                             content = "↑";
@@ -60,27 +96,27 @@ namespace MortalKombatOverlay
                             content = "↓";
                             break;
                         case "S":
-                            content = movePart.Value;
+                            content = "S";
                             buttonColor = new SolidColorBrush(Colors.Aqua);
                             break;
                         case "G":
-                            content = movePart.Value;
+                            content = "G";
                             buttonColor = new SolidColorBrush(Colors.Gray);
                             break;
                         case "BP":
-                            content = movePart.Value;
+                            content = UseNumberNotation ? "2" : "BP";
                             buttonColor = new SolidColorBrush(Colors.Green);
                             break;
                         case "BK":
-                            content = movePart.Value;
+                            content = UseNumberNotation ? "4" : "BK";
                             buttonColor = new SolidColorBrush(Colors.Blue);
                             break;
                         case "FP":
-                            content = movePart.Value;
+                            content = UseNumberNotation ? "1" : "FP";
                             buttonColor = new SolidColorBrush(Colors.DeepPink);
                             break;
                         case "FK":
-                            content = movePart.Value;
+                            content = UseNumberNotation ? "3" : "FK";
                             buttonColor = new SolidColorBrush(Colors.Red);
                             break;
                     }
@@ -97,16 +133,14 @@ namespace MortalKombatOverlay
                         {
                             Text = content,
                             VerticalAlignment = VerticalAlignment.Center,
-                            Margin = new Thickness(2),  // Apply margin to the last button
                             HorizontalAlignment = HorizontalAlignment.Center,
                             Foreground = textColor
                         }
                     };
 
-                    // Check if this is the last item in the list
                     if (movePart.Equals(moveParts[moveParts.Count - 1]))
                     {
-                        border.Margin = new Thickness(2, 2, 6, 2);  // Apply margin to the last button
+                        border.Margin = new Thickness(2, 2, 6, 2);
                     }
 
                     panel.Children.Add(border);

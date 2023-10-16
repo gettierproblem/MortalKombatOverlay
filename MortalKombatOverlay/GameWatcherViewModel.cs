@@ -34,7 +34,6 @@ public class GameWatcherViewModel : INotifyPropertyChanged
     private bool _wasMortalKombatMinimized;
     private IntPtr previousHwnd = IntPtr.Zero;
 
-
     public GameWatcherViewModel()
     {
         ChangePlayer1MoveListStateCommand = new RelayCommand(_ => ChangePlayer1MoveListState());
@@ -62,6 +61,7 @@ public class GameWatcherViewModel : INotifyPropertyChanged
         get => _player1;
         set
         {
+            if (value.Equals(_player1)) return;
             _player1 = value;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Player1)));
             UpdatePlayer1Moves();
@@ -90,6 +90,7 @@ public class GameWatcherViewModel : INotifyPropertyChanged
         get => _player2;
         set
         {
+            if (value.Equals(_player2)) return;
             _player2 = value;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Player2)));
             UpdatePlayer2Moves();
@@ -165,6 +166,9 @@ public class GameWatcherViewModel : INotifyPropertyChanged
     public void StartWatching(string title)
     {
         LoadCharacterData(); // Load JSON data during initialization
+
+        WatchGameWindow(title); // run initially to check if game is already running
+
         _gameWatcherTimer = new DispatcherTimer
         {
             Interval = TimeSpan.FromSeconds(3) // 3 seconds interval
@@ -203,6 +207,20 @@ public class GameWatcherViewModel : INotifyPropertyChanged
                 ImageFormat.Png); // Save as PNG format. You can change this to another format if needed.
     }
 
+    private string GetPlayerContent(string propertyName)
+    {
+        // Logic to get content based on propertyName (Player1 or Player2)
+        if (propertyName == "Player1")
+        {
+            return Player1; // Assuming Player1 is a property in your class
+        }
+        else if (propertyName == "Player2")
+        {
+            return Player2; // Assuming Player2 is a property in your class
+        }
+        return null;
+    }
+
     private void ChangePlayer1MoveListState()
     {
         ChangePlayerMoveListState(ref _player1MoveListState, Player1Moves, "Player1");
@@ -216,10 +234,13 @@ public class GameWatcherViewModel : INotifyPropertyChanged
     private void ChangePlayerMoveListState(ref MoveListState playerMoveListState,
         ObservableCollection<KeyValuePair<string, List<MovePart>>> movesCollection, string propertyName)
     {
+        string actualContent = GetPlayerContent(propertyName); // Implement this function to return the content
+
         playerMoveListState = (MoveListState)(((int)playerMoveListState + 1) % 4);
-        UpdateMoves(movesCollection, playerMoveListState, propertyName);
-        SetForegroundWindow(_hwnd);
+        UpdateMoves(movesCollection, playerMoveListState, actualContent);
+    
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName + "MoveListStateText"));
+        SetForegroundWindow(_hwnd);
     }
 
     private void ClearPlayerInfo()
