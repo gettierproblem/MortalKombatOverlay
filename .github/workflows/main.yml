@@ -24,7 +24,7 @@ jobs:
       run: dotnet restore
 
     - name: Publish
-      run: dotnet publish --configuration Release --output ./publish
+      run: dotnet publish ./MortalKombatOverlay/MortalKombatOverlay.csproj --configuration Release --output ./publish
 
     - name: Zip publish folder
       run: Compress-Archive -Path ./publish/* -DestinationPath ./publish/mortalkombatoverlay.zip
