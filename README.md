@@ -4,7 +4,7 @@
 
 Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal Kombat™ 1 (2023). It displays move lists while the game is running.
 
-<img width="1166" alt="Screenshot 2023-10-16 174231" src="https://github.com/gettierproblem/MortalKombatOverlay/assets/2585255/2c1a8278-8398-406c-a7e6-e6cf4a9026de">
+<img width="1164" alt="Screenshot 2023-10-17 121911" src="https://github.com/gettierproblem/MortalKombatOverlay/assets/2585255/13a2c311-4724-4a5e-b5f2-df144c77c8be">
 
 ## Features
 
@@ -26,7 +26,7 @@ Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal 
 ## Usage
 
 1. Run "MortalKombatOverlay.exe"
-<img width="600" alt="Screenshot 2023-10-16 181617" src="https://github.com/gettierproblem/MortalKombatOverlay/assets/2585255/e948ea5e-f97e-4516-8ce8-191ebf88e7b5">
+<img width="600" alt="Screenshot 2023-10-17 122618" src="https://github.com/gettierproblem/MortalKombatOverlay/assets/2585255/f62f4c04-7a08-445f-b081-ffd43716a8a1">
 
 2. Click the Launch Mortal Kombat" button to start the game if it's not already running.  Otherwise, alt-tab to the game.
 
@@ -39,7 +39,7 @@ Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal 
 ## Known issues
 
 1. App is ~500mb.  It uses OCR to scrape the text from the screen, and PaddleOCR/OpenCV dlls are huge.
-2. Application is not signed using smartscreen
+2. Application is not signed using smartscreen.
 
 ## Anti-cheat notice
 
