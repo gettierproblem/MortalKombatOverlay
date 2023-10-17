@@ -38,13 +38,13 @@ Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal 
 
 ## Known issues
 
-1. App is ~500mb.  It uses OCR to scrape the text from the screen, and PaddleOCR/OpenCV dlls are huge.  Test dlls also being included in release, not sure why.
+1. App is ~500mb.  It uses OCR to scrape the text from the screen, and PaddleOCR/OpenCV dlls are huge.
 2. Application is not signed using smartscreen
 
 ## Anti-cheat notice
 
-1. This application is not designed to cheat or exploit Mortal Kombat gameplay. It functions independently, running in a separate process, and uses OCR to display move lists. The program neither injects code into the Mortal Kombat game nor automates any in-game actions, and therefore should not trigger anti-cheat mechanisms. Use of this application is deemed to be safe under these conditions.
-2. While the design and functionality of this application do not intentionally interact with Mortal Kombat in a way that should trigger anti-cheat systems, there can be no assurance or guarantee that using this overlay is entirely risk-free. Given the evolving nature of anti-cheat algorithms and terms of service, users employ this overlay at their own risk and responsibility. The developer cannot be held liable for any repercussions, including but not limited to account suspension or banning, resulting from the use of this application.
+1. This application is not designed to cheat or exploit Mortal Kombat gameplay - it is a productivity tool, intended so that the user can view character movelists easily, and does not confer a gameplay advantage. It functions independently, running in a separate process, and uses OCR to display move lists. The program neither injects code into the Mortal Kombat game nor automates any in-game actions, and therefore should not trigger anti-cheat mechanisms. Use of this application is deemed to be safe under these conditions.
+2. While the design and functionality of this application do not intentionally interact with Mortal Kombat in a way that should trigger anti-cheat systems or infringe the Mortal Kombat EULA, there can be no assurance or guarantee that using this overlay is entirely risk-free. Given the evolving nature of anti-cheat algorithms and [terms of service](https://legal.wbgames.com/eula/steam/eula_stm_en_US.html), users employ this overlay at their own risk and responsibility. The developer cannot be held liable for any repercussions, including but not limited to account suspension or banning, resulting from the use of this application.
 
 ## License
 
