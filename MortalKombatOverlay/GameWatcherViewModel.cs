@@ -280,10 +280,10 @@ public class GameWatcherViewModel : INotifyPropertyChanged
     {
         return state switch
         {
-            MoveListState.AllVisible => $"{playerPrefix}: Show Special Moves Only",
-            MoveListState.SpecialMovesOnly => $"{playerPrefix}: Show Fatalities Only",
-            MoveListState.FatalitiesOnly => $"{playerPrefix}: Hide Moves",
-            MoveListState.Hidden => $"{playerPrefix}: Show All Moves",
+            MoveListState.AllVisible => $"{playerPrefix}: AllVisible",
+            MoveListState.SpecialMovesOnly => $"{playerPrefix}: SpecialMovesOnly",
+            MoveListState.FatalitiesOnly => $"{playerPrefix}: FatalitiesOnly",
+            MoveListState.Hidden => $"{playerPrefix}: Hidden",
             _ => "Unknown"
         };
     }
