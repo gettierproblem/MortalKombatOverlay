@@ -24,11 +24,14 @@ jobs:
       run: dotnet restore
 
     - name: Publish
-      run: dotnet publish --configuration Release --output ./publish
+      run: dotnet publish ./MortalKombatOverlay/MortalKombatOverlay.csproj --configuration Release --output ./publish
+
+    - name: Zip publish folder
+      run: Compress-Archive -Path ./publish/* -DestinationPath ./publish/mortalkombatoverlay.zip
 
     - name: Create Release
       id: create_release
       uses: softprops/action-gh-release@v1
       with:
-        files: ./publish/*
-        token: ${{ secrets.RELEASE_SECRET}}
+        files: ./publish/mortalkombatoverlay.zip
+        token: ${{ secrets.RELEASE_SECRET }}
