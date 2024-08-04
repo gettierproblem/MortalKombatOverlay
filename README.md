@@ -1,6 +1,6 @@
 # Mortal Kombat Overlay
 
-## Overview
+## Overview  
 
 Mortal Kombat Overlay is a utility that provides an overlay for the game Mortal Kombat™ 1 (2023). It displays move lists while the game is running.
 
